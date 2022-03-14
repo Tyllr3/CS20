@@ -1,4 +1,4 @@
-/*
+/* 
 Program: PrimeNum.java          Last Date of this Revision: March 8th,2022
 
 Purpose: An application that allows the user to find out whether or not a number is prime.

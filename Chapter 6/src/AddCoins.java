@@ -1,3 +1,13 @@
+/* 
+Program: AddCoins.java          Last Date of this Revision: March 8th,2022
+
+Purpose: An application that allows the user to input different amounts of coins, and then get the total dollar value.
+
+Author: Tyler Grewal 
+School: CHHS
+Course: Computer Programming 20 */
+
+//importing things
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -9,7 +19,7 @@ import javax.swing.JTextField;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class AddCoins {
+public class AddCoins { //start of class
 
 	private JFrame frame;
 	private JTextField N;
@@ -40,21 +50,22 @@ public class AddCoins {
 		initialize();
 	}
 
-	public static double getDollarAmount(int Q, int D, int N, int P)
+	public static double getDollarAmount(int Q, int D, int N, int P) //calculates each value of coins
 	{
-		double q = Q * 0.25;
-		double d = D * 0.10;
-		double n = N * 0.05;
-		double p = P *0.01;
-		double T = (q+d+n+p);
+		double q = Q * 0.25; //quarters are 25 c
+		double d = D * 0.10; //dimes are 10 c
+		double n = N * 0.05; //nickels are 5 c
+		double p = P *0.01; //pennies are 1 c
+		double T = (q+d+n+p); //total amount is everything added together
 		
-		return T;
+		return T; //return total value
 	}
 
 	
 	/**
 	 * Initialize the contents of the frame.
 	 */
+	//GUI
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 561, 374);
@@ -126,13 +137,13 @@ public class AddCoins {
 			public void actionPerformed(ActionEvent e) 
 			{
 				
-				int qt = Integer.parseInt(Q.getText());
-				int dt = Integer.parseInt(D.getText());
-				int nt = Integer.parseInt(N.getText());
-				int pt = Integer.parseInt(P.getText());
+				int qt = Integer.parseInt(Q.getText()); //pulls value of quarters
+				int dt = Integer.parseInt(D.getText()); //pulls value of dimes
+				int nt = Integer.parseInt(N.getText()); //pulls value of nickels
+				int pt = Integer.parseInt(P.getText()); //pulls value of pennies
 				
 				
-				T.setText(Double.toString(getDollarAmount(qt, dt, nt, pt)));
+				T.setText(Double.toString(getDollarAmount(qt, dt, nt, pt))); //total amount is all together, returns this value to the user
 				
 			}
 		});
@@ -149,4 +160,4 @@ public class AddCoins {
 		// TODO Auto-generated method stub
 
 	}
-}
+} //end of class
