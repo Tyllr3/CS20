@@ -8,10 +8,10 @@ public class CRT
 	4.  Visibility is another word used to describe the access level of a method. 
 	5.  Var 1 and 2 are local to main method, and var 3 and 4 are local to method 1.
 	6.
-		a. public static int getVowels (String val)
-		b. public static int ExtractDigit (Int val)
+		a. public static int ExtractDigit (Int val)
 		c. public static String insertString (Sring val)
-	7. 
+	7. int getVowels (String val)
+		b. public static 
 		a. It distinguishes it based off of the name and order of its parameters.
 	b. Two methods can have the same name, as long as the parameters are different; this is called method overloading. */
 
