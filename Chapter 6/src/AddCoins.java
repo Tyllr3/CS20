@@ -1,4 +1,4 @@
-/* 
+/*  
 Program: AddCoins.java          Last Date of this Revision: March 8th,2022
 
 Purpose: An application that allows the user to input different amounts of coins, and then get the total dollar value.
