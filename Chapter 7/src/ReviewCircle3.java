@@ -1,21 +1,30 @@
 /* 
-Program: ReviewCircle.java          Last Date of this Revision: March 15th,2022
+Program: ReviewCircle3.java          Last Date of this Revision: March 17th,2022
 
-Purpose: An application that allows the user to get the circumference of a circle, modified ver. of circle class
+Purpose: An application that modifies the previous one to have method that returns the formula for Area
 
 Author: Tyler Grewal 
 School: CHHS
 Course: Computer Programming 20 */
 
-public class ReviewCircle //start of class 
+public class ReviewCircle3 //start of class 
 {
 	private static final double PI = 3.14; //pi is 3.14
 	private double radius; //sets radius as a variable
 
+	public static void displayAreaFormula() //gives the option to display the formula
+	{
+		System.out.println("The formula for the area of a circle is a=Pi*r*r");
+	}
 	
-	public ReviewCircle() //constructor method
+	public ReviewCircle3() //constructor method
 	{
 		radius = 3; //radius is set, default 
+	}
+	
+	public ReviewCircle3(double r) //Assigns radius as r
+	{
+		radius = r;
 	}
 	
 	public void setRadius (double newRadius) //radius has been changed 
@@ -48,8 +57,7 @@ public class ReviewCircle //start of class
 	
 } //end of class
 
-/* Screen Dump
-
-Circle Radius: 3.0
-Circle Circumference: 18.84  */
-		
+/*
+Circle Radius: 6.0
+Circle Circumference: 37.68
+The formula for the area of a circle is a=Pi*r*r */

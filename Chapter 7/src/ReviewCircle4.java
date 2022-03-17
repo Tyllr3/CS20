@@ -1,25 +1,48 @@
 /* 
-Program: ReviewCircle2.java          Last Date of this Revision: March 15th,2022
+Program: ReviewCircle4.java          Last Date of this Revision: March 17th,2022
 
-Purpose: An application that modifies the previous one to have an overloaded constructor that accepts the radius of a circle object
+Purpose: An application that modifies the previous one to override the equals() and toString() methods
 
 Author: Tyler Grewal 
 School: CHHS
 Course: Computer Programming 20 */
 
-public class ReviewCircle2 //start of class 
+public class ReviewCircle4 //start of class 
 {
 	private static final double PI = 3.14; //pi is 3.14
 	private double radius; //sets radius as a variable
 
+	public boolean equals(Object c)
+	{
+		ReviewCircle4 testObj = (ReviewCircle4)c;
+		if (testObj.getRadius()== radius)
+		{
+			return(true);
+		}
+			else 
+			{
+				return(false);
+			}
+		}
+
+	public String toString()
+	{
+		String circleString;
+		circleString = "Circle has radius " + radius;
+		return (circleString);
+	}
 	
+	public static void displayAreaFormula()
+	{
+		System.out.println("The formula for the area of a circle is a=Pi*r*r");
+	}
 	
-	public ReviewCircle2() //constructor method
+	public ReviewCircle4() //constructor method
 	{
 		radius = 3; //radius is set, default 
 	}
 	
-	public ReviewCircle2(double r) //Assigns radius as r
+	public ReviewCircle4(double r) //Assigns radius as r
 	{
 		radius = r;
 	}
@@ -52,10 +75,8 @@ public class ReviewCircle2 //start of class
 		return(radius); //returns
 	}
 	
-} //end of class
+}
 
-/*
-Circle Radius: 3.0
-Circle Circumference: 18.84
-Circle Radius: 6.0
-Circle Circumference: 37.68 */
+/* Objects are not equal
+Circle has radius 3.0
+Circle has radius 4.0 */
