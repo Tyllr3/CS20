@@ -31,7 +31,7 @@ public class ReviewCircle2 //start of class
 	
 	public double circumference() //calculates circumference of circle, method class
 	{
-		double Circlecircumference; //variable
+		double Circlecircumference; //variable 
 		
 		Circlecircumference=PI*radius*2; //equation 
 		return (Circlecircumference);  //returns
