@@ -7,34 +7,35 @@ Purpose: Continuation of MySavings.java -- An application that displays a menu o
 Author: Tyler Grewal 
 School: CHHS
 Course: Computer Programming 20 */
-public class PiggyBank
+
+public class PiggyBank //starts class
 {
-	private double balance;
+	private double balance; //balance as a variable
 	
-	public PiggyBank(double amount)
+	public PiggyBank(double amount) //constructor method 
 	{
-		balance = amount;
+		balance = amount; //balance is equal to the amount of money the person has 
 	}
 	
-	public void addCoin(double cents)
+	public void addCoin(double cents) //to add coins
 	{
-		balance =  balance + cents;
+		balance =  balance + cents; //they must add the cents to the balance; the amount added is controlled by MySavings.java
 	}
 	
-	public double giveTotal()
+	public double giveTotal() //showing total amount
 	{
-		return balance;
+		return balance; //returns value the person currently has in their account 
 	}
 	
-	public void RemoveCoins(double amt)
+	public void RemoveCoins(double amt) //method to remove money 
 	{
-		if (amt > balance)
+		if (amt > balance) //if the amount they want to remove is above what they have in their account at the moment 
 		{
-			System.out.println("You don't have sufficient funs :((");
+			System.out.println("You don't have sufficient funs :(("); //tells the user that they don't have the funds to remove that much 
 		}
-		else
+		else //if else 
 		{
-		balance = balance - amt; 
+		balance = balance - amt; //go through with application and then remove the amount they wanted; it also displays how much they have left 
 		}
 	}
 
