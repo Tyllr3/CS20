@@ -61,7 +61,7 @@ public class Adder //Beginning of class
 					}
 				}
 			}
-			
+			 
 			
 		} while(userans != 999); //if number is the exiting number, it exits the program and it displays the points
 		System.out.println("Your score is: "+ points); //displays points 

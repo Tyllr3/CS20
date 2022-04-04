@@ -22,7 +22,7 @@ public class ReviewCircle //start of class
 	{
 		radius = newRadius;
 	}
-	 
+	  
 	public double circumference() //calculates circumference of circle, method class
 	{
 		double Circlecircumference; //variable

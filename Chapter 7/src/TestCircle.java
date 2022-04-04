@@ -16,7 +16,7 @@ public class TestCircle {
 		System.out.println("Circle Radius: " + spot.getRadius()); //returns radius
 		System.out.println("Circle Circumference: " + spot.circumference()); //returns circumference
 		
-		ReviewCircle2 spot2 = new ReviewCircle2(6); 
+		ReviewCircle2 spot2 = new ReviewCircle2(6);
 		System.out.println("Circle Radius: " + spot2.getRadius()); //returns radius
 		System.out.println("Circle Circumference: " + spot2.circumference()); //returns circumference
 		
