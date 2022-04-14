@@ -5,21 +5,21 @@ Author: Tyler Grewal
 School: CHHS
 Course: Computer Programming 20 */
 
-public class Squares {
+public class Squares { //start of class
 
 	public static void main(String[] args) 
 	{
-		int[]squares = new int[5];
+		int[]squares = new int[5]; //makes 5 indexes
 
-		for (int i =0; i <= 4; i++)
+		for (int i =0; i <= 4; i++) //between the numbers 0-4, add one 
 		{
-			squares[i] = i*i;
-			System.out.println(i +":"+squares[i]);
+			squares[i] = i*i; //multiply number by itself to get the square
+			System.out.println(i +":"+squares[i]); //displays original number and the squared one
 		}
-		
+		 
 	}
 
-}
+} //end of class
 
 /*Screen Dump
 0:0

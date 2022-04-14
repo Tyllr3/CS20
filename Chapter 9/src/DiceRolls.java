@@ -1,6 +1,6 @@
 /* Program: DiceRolls      Last Date of this Revision: April 14h,2022
 
-Purpose: An application that promps the user for the amount of rolls they would like to do with 3 dice, and then displays the outcomes.
+Purpose: An application that prompts the user for the amount of rolls they would like to do with 3 dice, and then displays the outcomes.
 Author: Tyler Grewal 
 School: CHHS
 Course: Computer Programming 20 */
@@ -15,6 +15,7 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.JLabel;
 import java.awt.Font;
+import java.awt.Color;
 
 public class DiceRolls { //start of class
 
@@ -67,6 +68,7 @@ public class DiceRolls { //start of class
 		panel.add(area);
 		
 		JButton btn = new JButton("click !");
+		btn.setBackground(new Color(152, 251, 152));
 		btn.setFont(new Font("Wide Latin", Font.PLAIN, 11));
 		btn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
@@ -87,7 +89,7 @@ public class DiceRolls { //start of class
 				}
 			}
 		});
-		btn.setBounds(51, 102, 89, 23);
+		btn.setBounds(51, 117, 89, 23);
 		panel.add(btn);
 		
 		num = new JTextField();
@@ -102,5 +104,17 @@ public class DiceRolls { //start of class
 		lbl.setHorizontalAlignment(SwingConstants.CENTER);
 		lbl.setBounds(10, 11, 171, 30);
 		panel.add(lbl);
+		
+		JButton btnNewButton = new JButton("clear!");
+		btnNewButton.setBackground(new Color(255, 182, 193));
+		btnNewButton.setFont(new Font("Wide Latin", Font.PLAIN, 11));
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				area.setText(" ");
+			}
+		});
+		btnNewButton.setBounds(51, 166, 89, 23);
+		panel.add(btnNewButton);
 	} //end of class 
 }

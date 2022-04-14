@@ -1,6 +1,6 @@
 /* Program: Reverse.java          Last Date of this Revision: April 13th,2022
 
-Purpose: An application that displays a count down.
+Purpose: An application that displays a count down. 
 Author: Tyler Grewal 
 School: CHHS
 Course: Computer Programming 20 */
