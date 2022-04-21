@@ -1,6 +1,6 @@
 /* Program: ReadLEDp2.java          Last Date of this Revision: April 19th,2022
 
-Purpose: modify read led
+Purpose: modify read led, reads to see if green led is being pressed 
 Author: Tyler Grewal 
 School: CHHS
 Course: Computer Programming 20 */

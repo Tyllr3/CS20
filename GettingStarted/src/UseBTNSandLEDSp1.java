@@ -1,6 +1,6 @@
 /* Program: UseBTNSandLEDSp1.java          Last Date of this Revision: April 19th,2022
 
-Purpose: modify UseBTNSandLEDS
+Purpose: modify UseBTNSandLEDS, click to turn led off
 Author: Tyler Grewal 
 School: CHHS
 Course: Computer Programming 20 */

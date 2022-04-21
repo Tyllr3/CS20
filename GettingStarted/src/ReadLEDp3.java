@@ -1,6 +1,6 @@
 /* Program: ReadLEDp3.java          Last Date of this Revision: April 19th,2022
 
-Purpose: modify read led
+Purpose: modify read led, only prints when red led is pressed
 Author: Tyler Grewal 
 School: CHHS
 Course: Computer Programming 20 */

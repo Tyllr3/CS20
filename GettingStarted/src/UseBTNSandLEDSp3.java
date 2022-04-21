@@ -1,6 +1,6 @@
-/* Program: UseBTNSandLEDSp3.java          Last Date of this Revision: April 19th,2022
+/* Program: UseBTNSandLEDSp3.java          Last Date of this Revision: April 21st,2022
 
-Purpose: modify UseBTNSandLEDS
+Purpose: modify UseBTNSandLEDS, count every time a button is pressed
 Author: Tyler Grewal 
 School: CHHS
 Course: Computer Programming 20 */
@@ -17,6 +17,7 @@ public class UseBTNSandLEDSp3 {
         DigitalOutput redLED = new DigitalOutput();
         DigitalInput greenButton = new DigitalInput();
         DigitalOutput greenLED = new DigitalOutput();
+        int num = 0;
 
         //Address | Address your four objects which lets your program know where to find them.
         redButton.setHubPort(0);
@@ -48,9 +49,15 @@ public class UseBTNSandLEDSp3 {
             } else {
                 greenLED.setState(false);
             }
-
-            Thread.sleep(150);
+            
+            if(redLED.getState()==true || greenLED.getState()==true)
+            {
+            	  num = num +1;
+          	    System.out.println("Amount of button presses lasting a second: "+ num );
+                  Thread.sleep(1000); 
+          	  
         }
     }
+}
 }
   

@@ -1,6 +1,6 @@
 /* Program: UseBTNSandLEDSp2.java          Last Date of this Revision: April 19th,2022
 
-Purpose: modify UseBTNSandLEDS
+Purpose: modify UseBTNSandLEDS, switch led and button connection
 Author: Tyler Grewal 
 School: CHHS
 Course: Computer Programming 20 */

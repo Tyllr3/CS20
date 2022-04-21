@@ -1,6 +1,6 @@
 /* Program: BlinkLEDp2.java          Last Date of this Revision: April 19th,2022
 
-Purpose: modify blink led
+Purpose: modify blink led, blink red 3 times
 Author: Tyler Grewal 
 School: CHHS
 Course: Computer Programming 20 */
