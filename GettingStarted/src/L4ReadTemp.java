@@ -1,4 +1,4 @@
-/* Program: ReadTemp.java          Last Date of this Revision: April 21st,2022
+/* Program: L4ReadTemp.java          Last Date of this Revision: April 21st,2022
 
 Purpose:display temperature of a room, modified to Fahrenheit
 Author: Tyler Grewal 

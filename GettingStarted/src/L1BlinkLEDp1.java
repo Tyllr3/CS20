@@ -1,4 +1,4 @@
-/* Program: BlinkLEDp1.java          Last Date of this Revision: April 19th,2022
+/* Program: L1BlinkLEDp1.java          Last Date of this Revision: April 19th,2022
 
 Purpose: modify blink led, blink red every 2 seconds
 Author: Tyler Grewal 

@@ -1,4 +1,4 @@
-/* Program: ReadLEDp3.java          Last Date of this Revision: April 19th,2022
+/* Program: L2ReadLEDp3.java          Last Date of this Revision: April 19th,2022
 
 Purpose: modify read led, only prints when red led is pressed
 Author: Tyler Grewal 

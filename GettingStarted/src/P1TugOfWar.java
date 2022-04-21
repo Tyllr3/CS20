@@ -1,4 +1,4 @@
-/* Program: TugOfWar.java          Last Date of this Revision: April 21st,2022
+/* Program: P1TugOfWar.java          Last Date of this Revision: April 21st,2022
 
 Purpose: create a game of tug of war where the first person to reach 10 presses wins; win is displayed by both lights flashing and then the winners light 5 times.
 Author: Tyler Grewal 

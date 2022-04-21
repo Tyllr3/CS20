@@ -1,4 +1,4 @@
-/* Program: ReadLEDp1.java          Last Date of this Revision: April 19th,2022
+/* Program: L2ReadLEDp1.java          Last Date of this Revision: April 19th,2022
 
 Purpose: modify read led, reads if red button is being pressed
 Author: Tyler Grewal 

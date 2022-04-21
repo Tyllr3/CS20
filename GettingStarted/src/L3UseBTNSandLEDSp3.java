@@ -1,4 +1,4 @@
-/* Program: UseBTNSandLEDSp3.java          Last Date of this Revision: April 21st,2022
+/* Program: L3UseBTNSandLEDSp3.java          Last Date of this Revision: April 21st,2022
 
 Purpose: modify UseBTNSandLEDS, count every time a button is pressed
 Author: Tyler Grewal 

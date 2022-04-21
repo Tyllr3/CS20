@@ -1,4 +1,4 @@
-/* Program: BlinkLEDp3.java          Last Date of this Revision: April 19th,2022
+/* Program: L1BlinkLEDp3.java          Last Date of this Revision: April 19th,2022
 
 Purpose: modify blink led, blink green
 Author: Tyler Grewal 
