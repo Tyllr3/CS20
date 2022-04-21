@@ -1,6 +1,6 @@
-/* Program: BlinkLEDp1.java          Last Date of this Revision: April 19th,2022
+/* Program: BlinkLEDp2.java          Last Date of this Revision: April 19th,2022
 
-Purpose: modify blink led, blink red every 2 seconds
+Purpose: modify blink led, blink red 3 times
 Author: Tyler Grewal 
 School: CHHS
 Course: Computer Programming 20 */
@@ -8,7 +8,7 @@ Course: Computer Programming 20 */
 //Add Phidgets Library | You added a file called phidget22 when configuring your project. Import gives you access to the Phidgets library code inside that file. 
 import com.phidget22.*;
 
-public class BlinkLEDp1 {
+public class L1BlinkLEDp2 {
     //Handle Exceptions | Exceptions will happen in your code from time to time. These are caused by unexpected things happening. Make sure you’ve added "throws Exception" to your main method.
     public static void main(String[] args) throws Exception{
 
@@ -23,12 +23,18 @@ public class BlinkLEDp1 {
         redLED.open(2000);
         
         //Use your Phidgets | Here is where you can have some fun and use your Phidgets! You can turn your LED on/off by setting the state to true/false. The sleep command keeps your LED on by letting 1000 milliseconds pass before turning the LED off.
-        while(true){
             redLED.setState(true);
             Thread.sleep(1000);
             redLED.setState(false);
             Thread.sleep(1000);
-        }
+            redLED.setState(true);
+            Thread.sleep(1000);
+            redLED.setState(false);
+            Thread.sleep(1000);
+            redLED.setState(true);
+            Thread.sleep(1000);
+            redLED.setState(false);
+            Thread.sleep(1000);
     }
 }
   

@@ -5,7 +5,7 @@ Author: Tyler Grewal
 School: CHHS
 Course: Computer Programming 20 */
 import com.phidget22.*;
-public class TugOfWar 
+public class P1TugOfWar 
 {
 	  public static void main(String[] args) throws Exception
 	  {

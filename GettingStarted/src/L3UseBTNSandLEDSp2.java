@@ -1,6 +1,6 @@
-/* Program: UseBTNSandLEDSp3.java          Last Date of this Revision: April 21st,2022
+/* Program: UseBTNSandLEDSp2.java          Last Date of this Revision: April 19th,2022
 
-Purpose: modify UseBTNSandLEDS, count every time a button is pressed
+Purpose: modify UseBTNSandLEDS, switch led and button connection
 Author: Tyler Grewal 
 School: CHHS
 Course: Computer Programming 20 */
@@ -8,7 +8,7 @@ Course: Computer Programming 20 */
 //Add Phidgets Library | You added a file called phidget22 when configuring your project. Import gives you access to the Phidgets library code inside that file. 
 import com.phidget22.*;
 
-public class UseBTNSandLEDSp3 {
+public class L3UseBTNSandLEDSp2 {
     //Handle Exceptions | Exceptions will happen in your code from time to time. These are caused by unexpected things happening. Make sure you’ve added "throws Exception" to your main method.
     public static void main(String[] args) throws Exception{
 
@@ -17,7 +17,6 @@ public class UseBTNSandLEDSp3 {
         DigitalOutput redLED = new DigitalOutput();
         DigitalInput greenButton = new DigitalInput();
         DigitalOutput greenLED = new DigitalOutput();
-        int num = 0;
 
         //Address | Address your four objects which lets your program know where to find them.
         redButton.setHubPort(0);
@@ -39,25 +38,19 @@ public class UseBTNSandLEDSp3 {
         while(true){
 
             if( redButton.getState()){
+                greenLED.setState(true);
+            } else {
+                greenLED.setState(false);
+            }
+
+            if(greenButton.getState()){
                 redLED.setState(true);
             } else {
                 redLED.setState(false);
             }
 
-            if(greenButton.getState()){
-                greenLED.setState(true);
-            } else {
-                greenLED.setState(false);
-            }
-            
-            if(redLED.getState()==true || greenLED.getState()==true)
-            {
-            	  num = num +1;
-          	    System.out.println("Amount of button presses lasting a second: "+ num );
-                  Thread.sleep(1000); 
-          	  
+            Thread.sleep(150);
         }
     }
-}
 }
   
