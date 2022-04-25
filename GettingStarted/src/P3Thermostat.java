@@ -75,11 +75,14 @@ public class P3Thermostat
 	        	greenState = greenButton.getState();
 
 	        	
-	        	if (printTemp >10)
+	        	if (printTemp >=10)
 	        	{
 	        		System.out.println("Temperature: " +temp + " °C" ); //print temp every 10 seconds
+	        		System.out.println("Set Temperature: " + setTemp);
+	        		printTemp = 0;
 	        	}
-	        	printTemp = 0;
+	        	printTemp = printTemp + 0.15;
+	        	Thread.sleep(150);
 	      
 		    }
 	     }
