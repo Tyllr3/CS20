@@ -60,12 +60,12 @@ public class P3Thermostat
 	        	} 
 	
 	        	
-	        	if( redButton.getState() && !redState)
+	        	if( redButton.getState() && !redState) //if red button is pushed, minus one and display
 	        	 {
 	                setTemp--;
 	                System.out.println("Set Temperature: " + setTemp);	               
 	        	 }
-	        	else if(greenButton.getState() && !greenState)
+	        	else if(greenButton.getState() && !greenState) //if green button is pushed, plus one and display
 	             {
 	            	 setTemp++;
 	            	 System.out.println("Set Temperature: " + setTemp);	
@@ -75,10 +75,10 @@ public class P3Thermostat
 	        	greenState = greenButton.getState();
 
 	        	
-	        	if (printTemp >=10)
+	        	if (printTemp >=10) //10 seconds is up, print
 	        	{
 	        		System.out.println("Temperature: " +temp + " °C" ); //print temp every 10 seconds
-	        		System.out.println("Set Temperature: " + setTemp);
+	        		System.out.println("Set Temperature: " + setTemp); //print set temperature every 10 seconds
 	        		printTemp = 0;
 	        	}
 	        	printTemp = printTemp + 0.15;
@@ -87,3 +87,16 @@ public class P3Thermostat
 		    }
 	     }
 }
+
+
+/* Screen Dump
+ 
+ Temperature: 26.25 °C
+Set Temperature: 21.0
+Set Temperature: 20.0
+Set Temperature: 19.0
+Set Temperature: 18.0
+Temperature: 26.28 °C
+Set Temperature: 18.0
+Temperature: 26.29 °C
+Set Temperature: 18.0 */
