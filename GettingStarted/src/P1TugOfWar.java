@@ -34,7 +34,7 @@ public class P1TugOfWar
 	        greenButton.open(1000);
 	        greenLED.open(1000);
 	        
-	        while(true){
+	        while(true){ //button connected to corresponding led
 	            if( redButton.getState()){
 	                redLED.setState(true);
 	            } else {
@@ -47,7 +47,7 @@ public class P1TugOfWar
 	                greenLED.setState(false);
 	            }
 	            
-	            if(redLED.getState()==true)
+	            if(redLED.getState()==true) //add 1 to variable when pressed to keep track of how many times it has been pushed (in 0.3 s)
 	            {
 	            	red = red +1;
 	            	Thread.sleep(300); 
@@ -59,7 +59,7 @@ public class P1TugOfWar
 	            	Thread.sleep(300); 
 	            }
 	            
-	            if (red >=10)
+	            if (red >=10) //if winner then blink both once and the winner 3 times
 	            {
 	            	 redLED.setState(true); greenLED.setState(true);
 	                 Thread.sleep(1000);
@@ -88,7 +88,7 @@ public class P1TugOfWar
 	                break;
 	            }
 	            
-	            if (green >= 10)
+	            if (green >= 10) 
 	            {
 	            	 redLED.setState(true); greenLED.setState(true);
 	                 Thread.sleep(1000);
@@ -118,4 +118,4 @@ public class P1TugOfWar
 	            }
 	        }
 	  }
-}
+} //end of class

@@ -10,7 +10,7 @@ import com.phidget22.*;
 
 public class EventButtonandLEDp1 {
     //Turn on/off LEDs with Global Variables
-    static boolean turnRedLEDOn = false;
+    static boolean turnRedLEDOn = false; //sets initial state as false
     static boolean turnGreenLEDOn = false;
 
     //Handle Exceptions
@@ -33,7 +33,7 @@ public class EventButtonandLEDp1 {
         greenLED.setIsHubPortDevice(true);
 
         //Event | Event code runs when data input from the sensor changes. The following event is a state change event. The code will listen to the button (Digital Input Object) and only run the contain code when the button is pressed or released (state changes).
-        redButton.addStateChangeListener(new DigitalInputStateChangeListener() {
+        redButton.addStateChangeListener(new DigitalInputStateChangeListener() { //attach a listener
             public void onStateChange(DigitalInputStateChangeEvent e) {
                 //Record button state to turn on/off the red LED
                 turnRedLEDOn = e.getState(); 
@@ -56,7 +56,7 @@ public class EventButtonandLEDp1 {
 
         //Use your Phidgets | In the button events you recorded the Button State. Here we will use that data to turn on/off the LEDs
         while(true) {
-            //turn red LED on based on red button input
+            //turn red LED on based on red button input 
             redLED.setState(turnRedLEDOn);
             //turn green LED on based on green button input
             greenLED.setState(turnGreenLEDOn);

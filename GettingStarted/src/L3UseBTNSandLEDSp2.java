@@ -37,7 +37,7 @@ public class L3UseBTNSandLEDSp2 {
         //Use your Phidgets | This code will turn on the LED when the matching button is pressed and turns off the LED when the matching button is released. The sleep function slows down the loop so the button state is only checked every 150ms.
         while(true){
 
-            if( redButton.getState()){
+            if( redButton.getState()){ //opposite button controls opposite led
                 greenLED.setState(true);
             } else {
                 greenLED.setState(false);
@@ -52,5 +52,5 @@ public class L3UseBTNSandLEDSp2 {
             Thread.sleep(150);
         }
     }
-}
+} //end of class
   

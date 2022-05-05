@@ -30,5 +30,5 @@ public class L1BlinkLEDp1 {
             Thread.sleep(1000);
         }
     }
-}
+} //end of class
   

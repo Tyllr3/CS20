@@ -10,7 +10,7 @@ import com.phidget22.*;
 
 public class EventButtonandLEDp3 {
     //Turn on/off LEDs with Global Variables
-    static boolean turnRedLEDOn = false;
+    static boolean turnRedLEDOn = false; //sets initial state as false
     static boolean turnGreenLEDOn = false;
 
     //Handle Exceptions
@@ -63,10 +63,10 @@ public class EventButtonandLEDp3 {
             //sleep for 150 milliseconds 
             Thread.sleep(150);
             
-          if(redLED.getState()==true || greenLED.getState()==true)
+          if(redLED.getState()==true || greenLED.getState()==true) //if red or green button is pushed 
                 {
                 	  num = num +1;
-              	    System.out.println("Amount of button presses "+ num );
+              	    System.out.println("Amount of button presses "+ num ); //displays the number of button presses
               	  
             }
         }

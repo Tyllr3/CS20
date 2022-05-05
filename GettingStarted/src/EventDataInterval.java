@@ -18,7 +18,7 @@ public class EventDataInterval {
         //Temperature Event |  Event code runs when data input from the sensor changes. The following event is a Temperature change event. The contained code will only run when the temperature input changes.
         temperatureSensor.addTemperatureChangeListener(new TemperatureSensorTemperatureChangeListener() {
             public void onTemperatureChange(TemperatureSensorTemperatureChangeEvent e) {
-                System.out.println("Temperature: " + e.getTemperature());
+                System.out.println("Temperature: " + e.getTemperature()); //prints out the temperature
             }
         });
 
@@ -33,7 +33,7 @@ public class EventDataInterval {
             Thread.sleep(150);
         }
     }
-}
+} //end of class
  
 
 /* P1 - 5000: displays every 5 seconds

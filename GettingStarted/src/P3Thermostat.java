@@ -86,7 +86,7 @@ public class P3Thermostat
 	      
 		    }
 	     }
-}
+} //end of class
 
 
 /* Screen Dump

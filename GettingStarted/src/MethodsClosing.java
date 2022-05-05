@@ -27,7 +27,7 @@ public class MethodsClosing {
         System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °C" );
         
     }
-}
+} //end of class
   
 /* P1;
 If trying to call temperature after close, you get the error:

@@ -25,17 +25,17 @@ public class L5ReadTempandHum {
         	double temp = temperatureSensor.getTemperature();
         	if (hum>30 && temp >21)
         	{
-        		System.out.println("Humidity: " + hum +" %RH, Temperature: " + temp + " °C" );
+        		System.out.println("Humidity: " + hum +" %RH, Temperature: " + temp + " °C" ); //print temp and hum
         		Thread.sleep(150);
         	}
         	else
         	{
-        		System.out.println("Humidity is too low, or temperature is too cold.");
+        		System.out.println("Humidity is too low, or temperature is too cold."); //if temp or hum is not 21 and 30 respectfully, then it will print that one of them is inadequate right now
         		 Thread.sleep(150);
         	}
         }
     }
-}
+} //end of class
   
 
 /*Screen Dump

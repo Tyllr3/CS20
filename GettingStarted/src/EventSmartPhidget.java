@@ -17,11 +17,11 @@ public class EventSmartPhidget {
         TemperatureSensor temperatureSensor = new TemperatureSensor();
 
         //Humidity Event |  Event code runs when data input from the sensor changes. The following event is a Humidity change event. The contained code will only run when the humidity input changes.
-        humiditySensor.addHumidityChangeListener(new HumiditySensorHumidityChangeListener() 
+        humiditySensor.addHumidityChangeListener(new HumiditySensorHumidityChangeListener() //listeners
         {
             public void onHumidityChange(HumiditySensorHumidityChangeEvent e) 
             {
-                System.out.println("Humidity: " + e.getHumidity() + "%RH");
+                System.out.println("Humidity: " + e.getHumidity() + "%RH"); //print humidity when it changes
             }
         });
         
@@ -32,15 +32,15 @@ public class EventSmartPhidget {
             {
                 if (e.getTemperature() >= 21)
                 {
-            	System.out.println("Temperature: " + e.getTemperature() + "°C");
+            	System.out.println("Temperature: " + e.getTemperature() + "°C"); //if temp is more or equal to 21, print when it changes
                 }
 
             	else
 	            {
-	            	System.out.println("Temperature: is too cold");
+	            	System.out.println("Temperature: is too cold"); //if not 
 	            }
             }
-        });
+        }); 
 
         //Open
         humiditySensor.open(1000);
@@ -51,7 +51,7 @@ public class EventSmartPhidget {
             Thread.sleep(150);
         }
     }
-}
+} //end of class
 
 /* P1:
  The code only prints if the temperature or humidity changes; the one in lesson 3 would print it continuously regardless of whether or not it changed, but this one has a change listener so it helps to only print when needed. 

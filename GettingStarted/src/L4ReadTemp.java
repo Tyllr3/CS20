@@ -20,12 +20,12 @@ public class L4ReadTemp {
 
         //Use your Phidgets | This code will print the temperature every 150ms
         while (true) {
-        	double f =  ((temperatureSensor.getTemperature())*1.8) +32;
+        	double f =  ((temperatureSensor.getTemperature())*1.8) +32; //tells the temp in F
             System.out.println("Temperature: " + f + " °F" );
             Thread.sleep(150);
         }
     }
-}
+} //end of class
   
 
 /* Screen Dump

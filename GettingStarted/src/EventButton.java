@@ -13,8 +13,8 @@ public class EventButton {
     public static void main(String[] args) throws Exception {
        
         //Create
-        DigitalInput redButton = new DigitalInput();
-        DigitalInput greenButton = new DigitalInput();
+        DigitalInput redButton = new DigitalInput(); //red button
+        DigitalInput greenButton = new DigitalInput(); //green button
 
         //Address
         redButton.setIsHubPortDevice(true);
@@ -23,18 +23,18 @@ public class EventButton {
         greenButton.setHubPort(5);
 
         //Event | Event code runs when data input from the sensor changes. The following event is a state change event. The code will listen to the button (Digital Input Object) and only run the contain code when the button is pressed or released (state changes).
-        redButton.addStateChangeListener(new DigitalInputStateChangeListener() 
+        redButton.addStateChangeListener(new DigitalInputStateChangeListener() //listener
         {
             public void onStateChange(DigitalInputStateChangeEvent e) 
             {
                 if (e.getState())
                 {
-                	System.out.println("Red button pressed");
+                	System.out.println("Red button pressed"); //tells you if the button is pressed
                 }
                 
                 else
                 {
-                	System.out.println("Red button not pressed");
+                	System.out.println("Red button not pressed"); //tells you if the button is not pressed
                 }
             }
         });
@@ -45,7 +45,7 @@ public class EventButton {
             {
                 if (e.getState())
                 {
-                	System.out.println("Green button pressed");
+                	System.out.println("Green button pressed"); 
                 }
                 
                 else
@@ -64,7 +64,7 @@ public class EventButton {
             Thread.sleep(150);
         }
     }
-}
+} //end of class
   
 
 /* Practice 1 - In lesson two, it told the state regardless of whether or not the button was being pressed, it always kept telling in case the situation would arise.

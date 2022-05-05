@@ -53,7 +53,7 @@ public class P2HotOrCold
 	        }
 	  }
 	  
-}
+} //end of class
 
 /* Screen Dump 
 //red led on for below:

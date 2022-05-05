@@ -23,7 +23,7 @@ public class L1BlinkLEDp2 {
         redLED.open(2000);
         
         //Use your Phidgets | Here is where you can have some fun and use your Phidgets! You can turn your LED on/off by setting the state to true/false. The sleep command keeps your LED on by letting 1000 milliseconds pass before turning the LED off.
-            redLED.setState(true);
+            redLED.setState(true); //blinks on and off 3 times, red
             Thread.sleep(1000);
             redLED.setState(false);
             Thread.sleep(1000);
@@ -36,5 +36,5 @@ public class L1BlinkLEDp2 {
             redLED.setState(false);
             Thread.sleep(1000);
     }
-}
+} //end of class
   

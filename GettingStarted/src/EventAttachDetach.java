@@ -14,9 +14,9 @@ public class EventAttachDetach
     public static void main(String[] args) throws Exception {
        
          //Create
-        TemperatureSensor temperatureSensor = new TemperatureSensor();
-        DigitalInput redButton = new DigitalInput();
-        DigitalOutput redLED = new DigitalOutput();
+        TemperatureSensor temperatureSensor = new TemperatureSensor(); //temp sensor
+        DigitalInput redButton = new DigitalInput(); //red button
+        DigitalOutput redLED = new DigitalOutput(); //red led
 
         //Address
         redButton.setHubPort(0);
@@ -39,7 +39,7 @@ public class EventAttachDetach
       
 
         //Data Event | Event code runs when data from sensor changes. 
-        temperatureSensor.addTemperatureChangeListener(new TemperatureSensorTemperatureChangeListener() 
+        temperatureSensor.addTemperatureChangeListener(new TemperatureSensorTemperatureChangeListener() //add temp changer listener
         {
             public void onTemperatureChange(TemperatureSensorTemperatureChangeEvent e) 
             {
@@ -52,7 +52,7 @@ public class EventAttachDetach
         //Attach Event | Attach Events run when a Phidget is connected to the Object
         temperatureSensor.addAttachListener(new AttachListener() {
             public void onAttach(AttachEvent e) {
-                System.out.println("Attach TEMP SENSOR!");
+                System.out.println("Attach TEMP SENSOR!"); //tells you it's attached
             }
         });
         
@@ -72,7 +72,7 @@ public class EventAttachDetach
         //Detach Event | Detach Events run when a Phidget is disconnected from the Object
         temperatureSensor.addDetachListener(new DetachListener() {
             public void onDetach(DetachEvent e) {
-                System.out.println("Detach TEMP SENSOR!");
+                System.out.println("Detach TEMP SENSOR!"); //tells you it's detached
             }
         });
         
@@ -100,7 +100,7 @@ public class EventAttachDetach
             Thread.sleep(150);
         }
     }
-            }
+            } //end of class
       
     
 

@@ -38,7 +38,7 @@ public class L3UseBTNSandLEDSp3 {
         //Use your Phidgets | This code will turn on the LED when the matching button is pressed and turns off the LED when the matching button is released. The sleep function slows down the loop so the button state is only checked every 150ms.
         while(true){
 
-            if( redButton.getState()){
+            if( redButton.getState()){ //turns led on for when pressed
                 redLED.setState(true);
             } else {
                 redLED.setState(false);
@@ -50,14 +50,14 @@ public class L3UseBTNSandLEDSp3 {
                 greenLED.setState(false);
             }
             
-            if(redLED.getState()==true || greenLED.getState()==true)
+            if(redLED.getState()==true || greenLED.getState()==true) //if green or red is pressed
             {
             	  num = num +1;
-          	    System.out.println("Amount of button presses lasting a second: "+ num );
-                  Thread.sleep(1000); 
+          	    System.out.println("Amount of button presses lasting a second: "+ num ); //prints out the amount of presses lasting a second
+                  Thread.sleep(1000); //1s
           	  
         }
     }
 }
-}
+} //end of class
   

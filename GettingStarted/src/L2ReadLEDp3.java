@@ -25,7 +25,7 @@ public class L2ReadLEDp3 {
         //Use your Phidgets | Here is where you use your Phidgets! This code checks the state of the button and prints true/false when the button is pressed/released. The sleep function means the button state is only checked every 150 milliseconds. Sleeping is used to make it easier to read the console output and to put less stress on your CPU.
        while (true)
        {
-    	   if (redButton.getState()==true)
+    	   if (redButton.getState()==true) //if button is pressed, print that the state is true
     	   {
     	    System.out.println("Button State: true " );
             Thread.sleep(150); 
@@ -35,5 +35,5 @@ public class L2ReadLEDp3 {
        
           
     }
-}
+} //end of class
   
